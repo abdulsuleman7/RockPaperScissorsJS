@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+nav {
+    background: #0d6efd;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+}
+h2{
+    
+    padding-left: 30px;
+    font-size: 30px;
+}
+
+button {
+    background-color: #1c7ddf;
+    font-size: 25px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    margin: 20px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    letter-spacing: 2px;
+    transition: 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+}
+
+div:hover button {
+    filter: blur(2.5px) brightness(0.8);
+}
+
+div button:hover {
+    filter: none;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+#result {
+    font-size: 20px;
+    text-align: center;
+    opacity: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.4s ease-in-out;
+    animation: shink 3s ease-in-out 2s forwards;
+
+}
+
+@keyframes shink {
+
+
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 0.5;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+footer {
+    background-color: rgba(28, 125, 223, 0.9);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-family: Arial, sans-serif;
+}
+
+footer p {
+    letter-spacing: 1.5px;
+}
+
+footer a.footer-link {
+    color: #ffd700;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+footer a.footer-link:hover {
+    color: #ffffff;
+}
