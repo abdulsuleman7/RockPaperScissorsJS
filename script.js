@@ -1,3 +1,5 @@
+console.log("Rock Paper Scissor...")
+
 
 let res = document.getElementById("result");
 
@@ -30,4 +32,5 @@ function playGame(UserChoice) {
     res.innerText = `You Selected: ${UserChoice} | Computer Selected: ${computer} and  The Result Is   → ${result}`;
 
 }
+
 
